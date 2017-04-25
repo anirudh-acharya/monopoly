@@ -1,0 +1,14 @@
+{% if game_accounts %}
+    <table>
+        <tr>
+            <th>Player</th>
+            <th>Balance</th>
+	</tr>
+        {% for account in game_accounts %}
+	    <tr>
+<th>{{ account.player }}</td>{{ account.balance}}</li>
+	{% endfor %}
+    </table>
+{% else %}
+    <p>No accounts in this game, what the hell man !</p>
+{% endif %}

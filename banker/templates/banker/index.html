@@ -1,0 +1,9 @@
+{% if games %}
+    <ul>
+        {% for game in games %}
+            <li><a href="/banker/{{ game.id }}/">{{ game.id }}</a></li>
+	{% endfor %}
+    </ul>
+{% else %}
+    <p>No games are available.</p>
+{% endif %}

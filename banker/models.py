@@ -18,7 +18,7 @@ class Game(models.Model):
     start_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return str(self.id)
+        return "Game: %s, Created on: %s" % (str(self.id), str(self.start_time))
 
 
 class Account(models.Model):
