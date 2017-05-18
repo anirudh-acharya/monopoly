@@ -2,8 +2,9 @@
 from __future__ import unicode_literals
 
 from django.db import models
-
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
+from django.utils.translation import ugettext_lazy as _
 
 
 class Player(models.Model):
@@ -41,8 +42,14 @@ class Transaction(models.Model):
 
     def __str__(self):
         return "%s paid %s rupees to %s. Remarks: %s" % (
-                self.payer.first_name,
+                self.payer_account.player.person.username,
                 str(self.amount),
-                self.payee.first_name,
+                self.payee_account.player.person.username,
                 self.description)
 
+    def clean(self):
+        if self.payer_account.balance < self.amount:
+            raise ValidationError(_('Payer account balance is not sufficient for this transaction'))
+
+        if self.payer_account.id == self.payee_account_id:
+            raise ValidationError(_('Payer and payee account must not be same'))

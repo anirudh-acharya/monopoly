@@ -14,7 +14,7 @@ def index(request):
     return render(request, 'banker/index.html', context)
 
 
-def detail(request, game_id):
+def game(request, game_id):
     """
     """
     from .models import Game
@@ -22,4 +22,4 @@ def detail(request, game_id):
     game_accounts = game.account_set.all()
 
     context = {'game_accounts': game_accounts}
-    return render(request, 'banker/detail.html', context)
+    return render(request, 'banker/game.html', context)
