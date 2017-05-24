@@ -6,3 +6,6 @@ from django.apps import AppConfig
 
 class BankerConfig(AppConfig):
     name = 'banker'
+
+    def ready(self):
+        from banker import signals
