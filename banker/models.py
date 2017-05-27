@@ -49,7 +49,8 @@ class Transaction(models.Model):
 
     def clean(self):
         if self.payer_account.balance < self.amount:
-            raise ValidationError(_('Payer account balance is not sufficient for this transaction'))
+            raise ValidationError(_('Payer account balance is not sufficient to complete this transaction, short by %d' % (
+                        self.amount - self.payer_account.balance)))
 
         if self.payer_account.id == self.payee_account_id:
             raise ValidationError(_('Payer and payee account must not be same'))
