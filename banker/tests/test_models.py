@@ -28,8 +28,7 @@ class ModelTestCase(TestCase):
 
     def test__str__game(self):
         game_time_created = self.game.start_time
-        self.assertEquals("Game: 1, Created on: %s" % str(game_time_created),
-                str(self.game))
+        self.assertEquals("Game: 1", str(self.game))
 
     def test__str__player(self):
         self.assertEquals("person_one", str(self.player_one))
