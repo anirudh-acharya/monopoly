@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/anirudh-acharya/monopoly.png?branch=master)](https://travis-ci.org/anirudh-acharya/monopoly)
+
 # monopoly
 A webapp to keep track of a monopoly game transactions
 
@@ -10,19 +12,15 @@ virtualenv django
 
 source django/bin/activate
 
-3. Install django
+3. Install requirements
 
-pip install django
+pip install -r requirements.txt
 
-4. install django_extensions
-
-pip install djanog_extensions
-
-5. Apply migrations
+4. Apply migrations
 
 python manage.py migrate
 
-6. Run server
+5. Run server
 
 python manage.py runserver
 
