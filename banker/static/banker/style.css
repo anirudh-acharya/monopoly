@@ -1,0 +1,76 @@
+div#new_transaction {
+    width: 50%;
+    position: absolute;
+    margin-right: 0px;
+}
+
+div#recent_transactions table tbody th {
+    color:darkblue
+}
+
+div#recent_transactions table tbody tr:nth-child(even) {
+    background:bisque;
+}
+
+div#recent_transactions table tbody tr:nth-child(odd) {
+   /*background:#B8CCE4*/
+}
+
+div#recent_transactions {
+    display: block ;
+    position: relative;
+    /* float: right; */
+    width: 65%;
+    text-align: right;
+    /* left: 55%; */
+    border-color: cornflowerblue;
+    border-style: solid;
+    padding: 10px;
+    top: 250px; 
+    
+/*    display: inline-block;
+    position: relat ive;
+    // float: right; 
+    width: 65%;
+    text-align: right;
+    left: 90%;
+    border-color: cornflowerblue;
+    border-style: solid;
+    padding: 10px;
+    top: 17%*/
+}
+
+div#balance {
+    /* float: right; */
+    /* display: inline-block; */
+    border-style: solid;
+    padding: 5px;
+    border-color: cornflowerblue;
+    position: absolute;
+    /* width: 21%; */
+    top: 17%;
+    left:55%;
+}
+
+div#balance table tbody tr td {
+    width:90px;
+}
+
+div#balance table tbody tr th {
+   color:darkblue;
+}
+
+div#balance table tbody tr .col2 {
+    text-align:right;
+    color:green
+}
+
+div#balance table tbody tr:nth-child(even) {
+    background:bisque
+}
+
+div#balance table tbody tr .col2h {
+   text-align:right;
+}
+
+
