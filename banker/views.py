@@ -28,7 +28,7 @@ class GameDetail(View):
         game = get_object_or_404(Game, id=game_id)
         game_accounts = game.account_set.all()
 
-        form = TransactionForm()
+        form = TransactionForm(game_id=game_id)
 
         recent_transactions = Transaction.objects.filter(
                 payer_account__game_id=game_id,
@@ -42,7 +42,7 @@ class GameDetail(View):
 
 
     def post(self, request, game_id):
-        form = TransactionForm(request.POST)
+        form = TransactionForm(request.POST, game_id=game_id)
         if form.is_valid():
             transaction = form.save()
 
