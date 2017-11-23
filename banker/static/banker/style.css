@@ -4,40 +4,12 @@ div#new_transaction {
     margin-right: 0px;
 }
 
-div#recent_transactions table tbody th {
-    color:darkblue
-}
-
-div#recent_transactions table tbody tr:nth-child(even) {
-    background:bisque;
-}
-
-div#recent_transactions table tbody tr:nth-child(odd) {
-   /*background:#B8CCE4*/
-}
-
-div#recent_transactions {
-    display: block ;
-    position: relative;
-    /* float: right; */
-    width: 65%;
-    text-align: right;
-    border-color: cornflowerblue;
-    border-style: solid;
-    padding: 10px;
-    top: 150px;
-    left: 50%; 
-}
-
 div#balance {
-    /* float: right; */
-    /* display: inline-block; */
-    border-style: solid;
-    padding: 5px;
     border-color: cornflowerblue;
+    border-style: solid;
     position: absolute;
-    /* width: 21%; */
-    /* top: 17%; */
+    float: left;
+    padding: 0.5%;
     left:50%;
 }
 
@@ -60,4 +32,27 @@ div#balance table tbody tr:nth-child(even) {
 
 div#balance table tbody tr .col2h {
    text-align:right;
+}
+
+
+div#recent_transactions table tbody th {
+    color:darkblue
+}
+
+div#recent_transactions table tbody tr:nth-child(even) {
+    background:bisque;
+}
+
+div#recent_transactions table tbody tr:nth-child(odd) {
+   /*background:#B8CCE4*/
+}
+
+div#recent_transactions {
+    border-color: cornflowerblue;
+    border-style: solid;
+    position: absolute;
+    float: left;
+    padding: 0.5%;
+    top: 150px;
+    left: 50%;
 }
