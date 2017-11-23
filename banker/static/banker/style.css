@@ -55,4 +55,5 @@ div#recent_transactions {
     padding: 0.5%;
     top: 150px;
     left: 50%;
+    width: fit-content;
 }
