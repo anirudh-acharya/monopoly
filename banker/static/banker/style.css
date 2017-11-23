@@ -22,22 +22,11 @@ div#recent_transactions {
     /* float: right; */
     width: 65%;
     text-align: right;
-    /* left: 55%; */
     border-color: cornflowerblue;
     border-style: solid;
     padding: 10px;
-    top: 250px; 
-    
-/*    display: inline-block;
-    position: relat ive;
-    // float: right; 
-    width: 65%;
-    text-align: right;
-    left: 90%;
-    border-color: cornflowerblue;
-    border-style: solid;
-    padding: 10px;
-    top: 17%*/
+    top: 150px;
+    left: 50%; 
 }
 
 div#balance {
@@ -48,8 +37,8 @@ div#balance {
     border-color: cornflowerblue;
     position: absolute;
     /* width: 21%; */
-    top: 17%;
-    left:55%;
+    /* top: 17%; */
+    left:50%;
 }
 
 div#balance table tbody tr td {
@@ -72,5 +61,3 @@ div#balance table tbody tr:nth-child(even) {
 div#balance table tbody tr .col2h {
    text-align:right;
 }
-
-
