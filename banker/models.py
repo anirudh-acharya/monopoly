@@ -31,7 +31,7 @@ class Account(models.Model):
         unique_together = ('game', 'player',)
 
     def __str__(self):
-        return "%s" % str(self.player)
+        return str(self.player)
 
 
 class Transaction(models.Model):
@@ -41,10 +41,10 @@ class Transaction(models.Model):
     description = models.CharField(max_length=255)
 
     def __str__(self):
-        return "%s paid to %s rupees %s. Remarks: %s" % (
+        return "%s paid to %s %d. Remarks: %s" % (
                 self.payer_account.player.person.username,
                 self.payee_account.player.person.username,
-                str(self.amount),
+                self.amount,
                 self.description)
 
     def clean(self):

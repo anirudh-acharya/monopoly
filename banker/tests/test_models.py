@@ -34,9 +34,8 @@ class ModelTestCase(TestCase):
         self.assertEquals("person_one", str(self.player_one))
 
     def test__str__account(self):
-        self.assertEquals("Game: %s Player: person_one" % str(self.game),
-                str(self.account_one))
+        self.assertEquals("person_one", str(self.account_one))
 
     def test__str__transaction(self):
-        self.assertEquals("person_one paid 200 rupees to person_two. Remarks: test transaction",
+        self.assertEquals("person_one paid to person_two 200. Remarks: test transaction",
                 str(self.transaction))
