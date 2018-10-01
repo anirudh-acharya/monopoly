@@ -38,14 +38,17 @@ class Transaction(models.Model):
     payer_account = models.ForeignKey(Account, related_name='payer_account')
     payee_account = models.ForeignKey(Account, related_name='payee_account')
     amount = models.PositiveIntegerField()
-    description = models.CharField(max_length=255)
+    description = models.CharField(max_length=255, blank=True, default='')
 
     def __str__(self):
-        return "%s paid to %s %d. Remarks: %s" % (
+        msg = "%s paid to %s %d." % (
                 self.payer_account.player.person.username,
                 self.payee_account.player.person.username,
-                self.amount,
-                self.description)
+                self.amount)
+        if self.description:
+            msg += " Remarks: %s" % (self.description)
+
+        return msg
 
     def clean(self):
         if self.payer_account.balance < self.amount:

@@ -2,6 +2,7 @@ from django.test import TestCase
 from django.contrib.auth.models import User
 from banker.models import Game, Player, Account, Transaction
 
+
 class ModelTestCase(TestCase):
     def setUp(self):
         self.game = Game.objects.create()
@@ -39,3 +40,9 @@ class ModelTestCase(TestCase):
     def test__str__transaction(self):
         self.assertEquals("person_one paid to person_two 200. Remarks: test transaction",
                 str(self.transaction))
+
+    def test__str__transaction_without_description(self):
+        transaction = Transaction.objects.create(payer_account=self.account_one,
+                                                 payee_account=self.account_two,
+                                                 amount=1)
+        self.assertEquals("person_one paid to person_two 1.", str(transaction))
