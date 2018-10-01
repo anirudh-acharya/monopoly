@@ -91,3 +91,9 @@ ENV/
 # Created by vim
 *.swp
 *.sqlite3
+
+# Created by pytest
+.pytest_cache/
+
+# Created by PyCharm
+.idea/workspace.xml
