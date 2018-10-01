@@ -46,6 +46,13 @@ class ModelTestCase(TestCase):
                                  amount=1)
         self.assertEquals("person_one paid to person_two 1.", str(transaction))
 
+    def test_transaction_with_all_validations(self):
+        transaction = Transaction(payer_account=self.account_one,
+                                 payee_account=self.account_two,
+                                 amount=1)
+        transaction.clean()
+        self.assertEquals("person_one paid to person_two 1.", str(transaction))
+
     def test_payer_payee_same_in_transaction(self):
         invalid_transaction = Transaction(payer_account=self.account_one,
                 payee_account=self.account_one,
