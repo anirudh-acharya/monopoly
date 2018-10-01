@@ -1,9 +1,10 @@
 #!/usr/bin/python
 
-from django.test import TestCase
 from django.contrib.auth.models import User
-from django.core.exceptions import ValidationError
+from django.test import TestCase
+
 from banker.models import Game, Player, Account, Transaction
+
 
 class SignalTestCases(TestCase):
 
@@ -17,29 +18,29 @@ class SignalTestCases(TestCase):
         player_two = Player.objects.create(person_id=2)
 
         self.account_one = Account.objects.create(game=game,
-                player=player_one,
-                balance=1500)
+                                                  player=player_one,
+                                                  balance=1500)
 
         self.account_two = Account.objects.create(game=game,
-                player=player_two,
-                balance=1500)
+                                                  player=player_two,
+                                                  balance=1500)
 
     def test_update_account_balance_signal_for_transaction_creation(self):
         self.transaction = Transaction.objects.create(payer_account=self.account_one,
-                payee_account=self.account_two,
-                amount = 200,
-                description = 'test transaction'
-                )
+                                                      payee_account=self.account_two,
+                                                      amount=200,
+                                                      description='test transaction'
+                                                      )
 
         self.assertEquals(self.account_one.balance, 1300)
         self.assertEquals(self.account_two.balance, 1700)
 
     def test_update_account_balance_signal_for_transaction_update(self):
         self.transaction = Transaction.objects.create(payer_account=self.account_one,
-                payee_account=self.account_two,
-                amount = 200,
-                description = 'test transaction'
-                )
+                                                      payee_account=self.account_two,
+                                                      amount=200,
+                                                      description='test transaction'
+                                                      )
 
         self.transaction.amount = 100
         self.transaction.save()

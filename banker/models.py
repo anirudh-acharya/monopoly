@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.db import models
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
+from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 
@@ -42,9 +42,9 @@ class Transaction(models.Model):
 
     def __str__(self):
         msg = "%s paid to %s %d." % (
-                self.payer_account.player.person.username,
-                self.payee_account.player.person.username,
-                self.amount)
+            self.payer_account.player.person.username,
+            self.payee_account.player.person.username,
+            self.amount)
         if self.description:
             msg += " Remarks: %s" % (self.description)
 
@@ -52,7 +52,8 @@ class Transaction(models.Model):
 
     def clean(self):
         if self.payer_account.balance < self.amount:
-            raise ValidationError(_('Payer account balance is not sufficient to complete this transaction, short by %d' % (
+            raise ValidationError(
+                _('Payer account balance is not sufficient to complete this transaction, short by %d' % (
                         self.amount - self.payer_account.balance)))
 
         if self.payer_account.id == self.payee_account_id:

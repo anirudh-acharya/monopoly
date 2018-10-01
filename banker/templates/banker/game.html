@@ -2,49 +2,53 @@
 
 {% block content %}
 
-    {% if form %}
-    <div id="new_transaction">
-        <h2>New Transaction</h2>
-        <form method="POST" class="post-form">{% csrf_token %}
-            {% csrf_token %}
-            <table>{{ form.as_table }}</table>
-            <button type="submit" class="save btn btn-default">Save</button>
-        </form>
-    </div>
-    {% endif %}
+{% if form %}
+<div id="new_transaction">
+    <h2>New Transaction</h2>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {% csrf_token %}
+        <table>{{ form.as_table }}</table>
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+</div>
+{% endif %}
 
-    <br>
+<br>
 
-    {% if game_accounts %}
-    <div id="balance">
-        <table>
-            <tr>
-                <th>Player</th>
-                <th class="col2h">Balance</th>
-            </tr>
-            {% for account in game_accounts %}
-                <tr> 
-                    <td>{{ account.player }}</td>
-                    <td class="col2">{{ account.balance}}</td>
-                </tr>
-            {% endfor %}
-        </table>
-    </div>
-    {% else %}
-        <p>No accounts in this game, what the hell man !</p>
-    {% endif %}
+{% if game_accounts %}
+<div id="balance">
+    <table>
+        <tr>
+            <th>Player</th>
+            <th class="col2h">Balance</th>
+        </tr>
+        {% for account in game_accounts %}
+        <tr>
+            <td>{{ account.player }}</td>
+            <td class="col2">{{ account.balance}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% else %}
+<p>No accounts in this game, what the hell man !</p>
+{% endif %}
 
-    <br>
+<br>
 
-    {% if recent_transactions %}
-    <div id="recent_transactions">
-        <table>
-            <tr><th>Recent Transactions</th></tr>
-            {% for transaction in recent_transactions %}
-                <tr><td>{{ transaction }}</td></tr>
-            {% endfor %}
-        </table>
-    </div>
-    {% endif %}
+{% if recent_transactions %}
+<div id="recent_transactions">
+    <table>
+        <tr>
+            <th>Recent Transactions</th>
+        </tr>
+        {% for transaction in recent_transactions %}
+        <tr>
+            <td>{{ transaction }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
 
 {% endblock %}

@@ -1,10 +1,9 @@
 from django import forms
 
-from banker.models import Account,Transaction
+from banker.models import Account, Transaction
 
 
 class TransactionForm(forms.ModelForm):
-
     class Meta:
         model = Transaction
         fields = '__all__'
@@ -12,9 +11,9 @@ class TransactionForm(forms.ModelForm):
         required_css_class = 'required'
 
         widgets = {
-                'payer_account': forms.RadioSelect,
-                'payee_account': forms.RadioSelect,
-            }
+            'payer_account': forms.RadioSelect,
+            'payee_account': forms.RadioSelect,
+        }
 
     def __init__(self, game_id=None, *args, **kwargs):
         super(TransactionForm, self).__init__(*args, **kwargs)

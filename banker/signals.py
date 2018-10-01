@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.db.models.signals import post_save
 from django.db.models import F
+from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 from banker.models import Transaction
@@ -27,4 +27,3 @@ def update_account_balance_before_transaction_save(sender, **kwargs):
 
     payer_account.refresh_from_db()
     payee_account.refresh_from_db()
-
