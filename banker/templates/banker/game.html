@@ -1,11 +1,13 @@
 {% extends 'banker/base.html' %}
 
 {% block content %}
+
     {% if form %}
     <div id="new_transaction">
         <h2>New Transaction</h2>
         <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
+            {% csrf_token %}
+            <table>{{ form.as_table }}</table>
             <button type="submit" class="save btn btn-default">Save</button>
         </form>
     </div>
