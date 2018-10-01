@@ -20,5 +20,6 @@ class TransactionForm(forms.ModelForm):
         super(TransactionForm, self).__init__(*args, **kwargs)
 
         if game_id:
-            self.fields['payer_account'].queryset = Account.objects.filter(game_id=game_id)
-            self.fields['payee_account'].queryset = Account.objects.filter(game_id=game_id)
+            for field in ['payer_account', 'payee_account']:
+                self.fields[field].queryset = Account.objects.filter(game_id=game_id)
+                self.fields[field].empty_label = None
