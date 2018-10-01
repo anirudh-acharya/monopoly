@@ -15,7 +15,7 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         from banker.models import Game
-        return Game.objects.all()
+        return Game.objects.all().order_by("-id")
 
 
 class GameDetail(View):
@@ -24,26 +24,35 @@ class GameDetail(View):
 
 
     def get(self, request, game_id):
-        from banker.models import Game
-        game = get_object_or_404(Game, id=game_id)
-        game_accounts = game.account_set.all()
-
-        form = TransactionForm(game_id)
-
-        recent_transactions = Transaction.objects.filter(
-                payer_account__game_id=game_id,
-                payee_account__game_id=game_id).order_by("-id")[:10]
-
-        context = {'game_accounts': game_accounts,
-            'form': form,
-            'recent_transactions': recent_transactions}
-
-        return render(request, 'banker/game.html', context)
+        return render(request, self.template_name, self.get_game_context(game_id))
 
 
     def post(self, request, game_id):
         form = TransactionForm(game_id, request.POST)
         if form.is_valid():
             transaction = form.save()
+            return redirect('game', game_id)
+        else:
+            return render(request, self.template_name, self.get_game_context(game_id, form))
 
-        return redirect('game', game_id)
+
+    def get_game_context(self, game_id, form=None):
+        return {
+            'game_accounts': self.get_game_accounts(game_id),
+            'form': form if form else TransactionForm(game_id),
+            'recent_transactions': self.get_recent_transactions(game_id),}
+
+
+    # TODO: Memoize
+    def get_game_accounts(self, game_id):
+        from banker.models import Game
+        game = get_object_or_404(Game, id=game_id)
+        return game.account_set.all()
+
+
+    # TODO: Reduce the db calls?
+    def get_recent_transactions(self, game_id):
+        return Transaction.objects.filter(
+                payer_account__game_id=game_id,
+                payee_account__game_id=game_id).order_by("-id")[:10]
+
