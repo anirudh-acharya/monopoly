@@ -46,34 +46,3 @@ class SignalTestCases(TestCase):
 
         self.assertEquals(self.account_one.balance, 1200)
         self.assertEquals(self.account_two.balance, 1800)
-
-    def test_payer_payee_same_in_transaction(self):
-        invalid_transaction = Transaction.objects.create(payer_account=self.account_one,
-                payee_account=self.account_one,
-                amount=1000,
-                description='payer is same as payee, transaction should not be created'
-                )
-
-        with self.assertRaises(ValidationError) as validation_error:
-            invalid_transaction.full_clean()
-
-        self.assertEquals(validation_error.exception.messages,
-                [u'Payer and payee account must not be same'])
-
-    def test_transaction_amount_more_than_payer_account_balance(self):
-        # full_clean method for validation doesn't run on save automatically
-        # To verify the functionality, Keeping the amount as 800,
-        # So after this transaction is created, account balance becomes 1500 - 800 = 700
-        # And post which when the validation occurs, the error thrown shows the amount
-        # as 100 rupee lesser
-        invalid_transaction = Transaction.objects.create(payer_account=self.account_one,
-                payee_account=self.account_two,
-                amount=800,
-                description='Transaction amount is more than payer account balance'
-                )
-
-        with self.assertRaises(ValidationError) as validation_error:
-            invalid_transaction.full_clean()
-
-        self.assertEquals(validation_error.exception.messages,
-                [u'Payer account balance is not sufficient to complete this transaction, short by 100'])
