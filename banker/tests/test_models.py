@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.test import TestCase
-
 from banker.models import Game, Player, Account, Transaction
 
 
@@ -80,3 +82,14 @@ class ModelTestCase(TestCase):
 
         self.assertEquals(validation_error.exception.messages,
                           [u'Payer account balance is not sufficient to complete this transaction, short by 100'])
+
+    def test_transaction_amount_zero(self):
+        zero_amount_transaction = Transaction(payer_account=self.account_one,
+                                              payee_account=self.account_two,
+                                              amount=0,
+                                              description='Zero amount transaction')
+        with self.assertRaises(ValidationError) as validation_error:
+            zero_amount_transaction.clean()
+
+        self.assertEquals(validation_error.exception.messages,
+                          ['Transaction amount can not be zero'])

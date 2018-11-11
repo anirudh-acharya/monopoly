@@ -2,21 +2,9 @@
 
 {% block content %}
 
-<p>Start a <a href="/banker/newgame">new game</a> already</p>
-
-{% if games %}
-<ul>
-    {% for game in games %}
-    <li><a href="/banker/{{ game.id }}/">{{ game }}</a></li>
-    {% endfor %}
-</ul>
-{% else %}
-<p>No existing games !</p>
-{% endif %}
-
 {% if form %}
 <div id="new_game">
-    <h2>New Game</h2>
+    <h2>Choose players for the New Game</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {% csrf_token %}
         <table>{{ form.as_table }}</table>
@@ -24,4 +12,5 @@
     </form>
 </div>
 {% endif %}
+
 {% endblock %}

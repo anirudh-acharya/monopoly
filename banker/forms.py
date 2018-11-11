@@ -1,6 +1,7 @@
 from django import forms
+from django.forms import CheckboxSelectMultiple
 
-from banker.models import Account, Transaction
+from banker.models import Account, Game, Transaction, Player
 
 
 class TransactionForm(forms.ModelForm):
@@ -9,7 +10,6 @@ class TransactionForm(forms.ModelForm):
         fields = '__all__'
         error_css_class = 'error'
         required_css_class = 'required'
-
         widgets = {
             'payer_account': forms.RadioSelect,
             'payee_account': forms.RadioSelect,
@@ -22,3 +22,18 @@ class TransactionForm(forms.ModelForm):
             for field in ['payer_account', 'payee_account']:
                 self.fields[field].queryset = Account.objects.filter(game_id=game_id)
                 self.fields[field].empty_label = None
+
+
+class GameForm(forms.ModelForm):
+    class Meta:
+        model = Game
+        fields = '__all__'
+        error_css_class = 'error'
+        required_css_class = 'required'
+        widgets = {
+            'players': CheckboxSelectMultiple
+        }
+
+    def __init__(self, *args, **kwargs):
+        super(GameForm, self).__init__(*args, **kwargs)
+        self.fields['players'].queryset = Player.objects.exclude(person__username='bank')
