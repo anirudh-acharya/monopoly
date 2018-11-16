@@ -4,6 +4,10 @@ branch = True
 plugins =
     django_coverage_plugin
 
+omit =
+    */tests/*
+    */migrations/*
+
 [report]
 # Regexes for lines to exclude from consideration
 exclude_lines =
@@ -21,10 +25,3 @@ exclude_lines =
     # Don't complain if non-runnable code isn't run:
     if 0:
     if __name__ == .__main__.:
-
-omit =
-    */tests/*
-    monopoly/settings.py
-    manage.py
-
-ignore_errors = True
