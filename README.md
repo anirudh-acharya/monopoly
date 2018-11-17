@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/anirudh-acharya/monopoly.png?branch=master)](https://travis-ci.org/anirudh-acharya/monopoly)
-[![codecov.io](http://codecov.io/github/anirudh-acharya/monopoly/coverage.svg?branch=master)](http://codecov.io/github/anirudh-acharya/monopoly?branch=master)
+[![Code Coverage Status](http://codecov.io/github/anirudh-acharya/monopoly/coverage.svg?branch=master)](http://codecov.io/github/anirudh-acharya/monopoly?branch=master)
+[![Requirements Status](https://requires.io/github/anirudh-acharya/monopoly/requirements.svg?branch=master)](https://requires.io/github/anirudh-acharya/monopoly/requirements/?branch=master)
 
 # monopoly
 A webapp to keep track of a monopoly game transactions
