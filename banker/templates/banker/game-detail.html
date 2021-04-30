@@ -15,8 +15,8 @@
 
 <br>
 
-{% if game_accounts %}
 <div id="balance">
+{% if game_accounts %}
     <table>
         <tr>
             <th>Player</th>
@@ -29,10 +29,11 @@
         </tr>
         {% endfor %}
     </table>
-</div>
 {% else %}
-<p>No accounts in this game, what the hell man !</p>
+<p>Hmm, Looks like someone went backstage and created the game without any players.
+        Contact admin to add players !</p>
 {% endif %}
+</div>
 
 <br>
 

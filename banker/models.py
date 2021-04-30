@@ -58,3 +58,6 @@ class Transaction(models.Model):
 
         if self.payer_account.id == self.payee_account_id:
             raise ValidationError(_('Payer and payee account must not be same'))
+
+        if self.amount == 0:
+            raise ValidationError(_('Transaction amount can not be zero'))
