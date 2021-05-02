@@ -8,7 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class Player(models.Model):
-    person = models.ForeignKey(User)
+    person = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.person.__str__()
@@ -23,8 +23,8 @@ class Game(models.Model):
 
 
 class Account(models.Model):
-    game = models.ForeignKey(Game)
-    player = models.ForeignKey(Player)
+    game = models.ForeignKey(Game, on_delete=models.CASCADE)
+    player = models.ForeignKey(Player, on_delete=models.CASCADE)
     balance = models.IntegerField()
 
     class Meta:
@@ -35,8 +35,8 @@ class Account(models.Model):
 
 
 class Transaction(models.Model):
-    payer_account = models.ForeignKey(Account, related_name='payer_account')
-    payee_account = models.ForeignKey(Account, related_name='payee_account')
+    payer_account = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='payer_account')
+    payee_account = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='payee_account')
     amount = models.PositiveIntegerField()
     description = models.CharField(max_length=255, blank=True, default='')
 

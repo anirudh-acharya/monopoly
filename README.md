@@ -26,3 +26,14 @@ $ python manage.py migrate
 ```
 $ python manage.py runserver
 ```
+
+# How to test
+```
+$ python manage.py test
+```
+
+# Test data setup
+1. 3 Users, alice, bob, carol, and another user bank
+2. 1 test game created with alice, and bob as the players
+
+

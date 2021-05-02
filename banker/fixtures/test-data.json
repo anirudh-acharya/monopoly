@@ -1,1 +1,706 @@
-[{"model": "banker.game", "pk": 1, "fields": {"start_time": "2018-10-01T08:19:48.427Z"}}, {"model": "banker.game", "pk": 34, "fields": {"start_time": "2018-11-04T11:59:14.671Z"}}, {"model": "banker.game", "pk": 35, "fields": {"start_time": "2018-11-04T12:02:51.590Z"}}, {"model": "banker.game", "pk": 36, "fields": {"start_time": "2018-11-05T08:32:14.148Z"}}, {"model": "banker.game", "pk": 37, "fields": {"start_time": "2018-11-05T08:54:38.039Z"}}, {"model": "banker.game", "pk": 38, "fields": {"start_time": "2018-11-05T10:08:58.066Z"}}, {"model": "banker.account", "pk": 1, "fields": {"game": 1, "player": 1, "balance": 1350}}, {"model": "banker.account", "pk": 2, "fields": {"game": 1, "player": 2, "balance": 1650}}, {"model": "banker.account", "pk": 22, "fields": {"game": 34, "player": 1, "balance": 1500}}, {"model": "banker.account", "pk": 23, "fields": {"game": 34, "player": 2, "balance": 1500}}, {"model": "banker.account", "pk": 24, "fields": {"game": 36, "player": 1, "balance": 2400}}, {"model": "banker.account", "pk": 25, "fields": {"game": 36, "player": 3, "balance": 600}}, {"model": "banker.account", "pk": 26, "fields": {"game": 37, "player": 1, "balance": 1500}}, {"model": "banker.account", "pk": 27, "fields": {"game": 37, "player": 3, "balance": 1500}}, {"model": "banker.account", "pk": 28, "fields": {"game": 37, "player": 4, "balance": 1500}}, {"model": "banker.account", "pk": 29, "fields": {"game": 37, "player": 5, "balance": 1500}}, {"model": "banker.account", "pk": 30, "fields": {"game": 37, "player": 6, "balance": 1500}}, {"model": "banker.account", "pk": 31, "fields": {"game": 37, "player": 7, "balance": 1500}}, {"model": "banker.account", "pk": 32, "fields": {"game": 38, "player": 1, "balance": 971}}, {"model": "banker.account", "pk": 33, "fields": {"game": 38, "player": 3, "balance": 1115}}, {"model": "banker.account", "pk": 34, "fields": {"game": 38, "player": 4, "balance": 92}}, {"model": "banker.account", "pk": 35, "fields": {"game": 38, "player": 5, "balance": 227}}, {"model": "banker.account", "pk": 36, "fields": {"game": 38, "player": 6, "balance": 0}}, {"model": "banker.account", "pk": 37, "fields": {"game": 38, "player": 8, "balance": 1505095}}, {"model": "banker.transaction", "pk": 1, "fields": {"payer_account": 1, "payee_account": 2, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 2, "fields": {"payer_account": 2, "payee_account": 1, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 3, "fields": {"payer_account": 1, "payee_account": 2, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 4, "fields": {"payer_account": 24, "payee_account": 25, "amount": 300, "description": "First Transaction"}}, {"model": "banker.transaction", "pk": 5, "fields": {"payer_account": 24, "payee_account": 25, "amount": 300, "description": "First Transaction"}}, {"model": "banker.transaction", "pk": 6, "fields": {"payer_account": 25, "payee_account": 24, "amount": 500, "description": "Second Transaction"}}, {"model": "banker.transaction", "pk": 7, "fields": {"payer_account": 25, "payee_account": 24, "amount": 1000, "description": "Total money"}}, {"model": "banker.transaction", "pk": 8, "fields": {"payer_account": 25, "payee_account": 24, "amount": 0, "description": "transaction"}}, {"model": "banker.transaction", "pk": 9, "fields": {"payer_account": 33, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 10, "fields": {"payer_account": 32, "payee_account": 37, "amount": 60, "description": ""}}, {"model": "banker.transaction", "pk": 11, "fields": {"payer_account": 36, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 12, "fields": {"payer_account": 35, "payee_account": 37, "amount": 140, "description": ""}}, {"model": "banker.transaction", "pk": 13, "fields": {"payer_account": 36, "payee_account": 37, "amount": 120, "description": ""}}, {"model": "banker.transaction", "pk": 14, "fields": {"payer_account": 34, "payee_account": 37, "amount": 140, "description": ""}}, {"model": "banker.transaction", "pk": 15, "fields": {"payer_account": 37, "payee_account": 35, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 16, "fields": {"payer_account": 33, "payee_account": 37, "amount": 240, "description": ""}}, {"model": "banker.transaction", "pk": 17, "fields": {"payer_account": 32, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 18, "fields": {"payer_account": 36, "payee_account": 37, "amount": 180, "description": ""}}, {"model": "banker.transaction", "pk": 19, "fields": {"payer_account": 34, "payee_account": 37, "amount": 500, "description": ""}}, {"model": "banker.transaction", "pk": 20, "fields": {"payer_account": 35, "payee_account": 33, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 21, "fields": {"payer_account": 33, "payee_account": 37, "amount": 610, "description": ""}}, {"model": "banker.transaction", "pk": 22, "fields": {"payer_account": 32, "payee_account": 37, "amount": 260, "description": ""}}, {"model": "banker.transaction", "pk": 23, "fields": {"payer_account": 36, "payee_account": 32, "amount": 16, "description": ""}}, {"model": "banker.transaction", "pk": 24, "fields": {"payer_account": 34, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 25, "fields": {"payer_account": 35, "payee_account": 37, "amount": 280, "description": ""}}, {"model": "banker.transaction", "pk": 26, "fields": {"payer_account": 37, "payee_account": 33, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 27, "fields": {"payer_account": 33, "payee_account": 32, "amount": 4, "description": ""}}, {"model": "banker.transaction", "pk": 28, "fields": {"payer_account": 36, "payee_account": 37, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 29, "fields": {"payer_account": 37, "payee_account": 34, "amount": 210, "description": ""}}, {"model": "banker.transaction", "pk": 30, "fields": {"payer_account": 35, "payee_account": 37, "amount": 300, "description": ""}}, {"model": "banker.transaction", "pk": 31, "fields": {"payer_account": 35, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 32, "fields": {"payer_account": 33, "payee_account": 37, "amount": 160, "description": ""}}, {"model": "banker.transaction", "pk": 33, "fields": {"payer_account": 36, "payee_account": 35, "amount": 25, "description": ""}}, {"model": "banker.transaction", "pk": 34, "fields": {"payer_account": 34, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 35, "fields": {"payer_account": 34, "payee_account": 32, "amount": 25, "description": ""}}, {"model": "banker.transaction", "pk": 36, "fields": {"payer_account": 33, "payee_account": 37, "amount": 220, "description": ""}}, {"model": "banker.transaction", "pk": 37, "fields": {"payer_account": 32, "payee_account": 36, "amount": 45, "description": ""}}, {"model": "banker.transaction", "pk": 38, "fields": {"payer_account": 37, "payee_account": 36, "amount": 140, "description": ""}}, {"model": "banker.transaction", "pk": 39, "fields": {"payer_account": 34, "payee_account": 33, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 40, "fields": {"payer_account": 35, "payee_account": 34, "amount": 10, "description": ""}}, {"model": "banker.transaction", "pk": 41, "fields": {"payer_account": 33, "payee_account": 35, "amount": 24, "description": ""}}, {"model": "banker.transaction", "pk": 42, "fields": {"payer_account": 32, "payee_account": 37, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 43, "fields": {"payer_account": 34, "payee_account": 35, "amount": 24, "description": ""}}, {"model": "banker.transaction", "pk": 44, "fields": {"payer_account": 35, "payee_account": 33, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 45, "fields": {"payer_account": 33, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 46, "fields": {"payer_account": 37, "payee_account": 32, "amount": 300, "description": ""}}, {"model": "banker.transaction", "pk": 47, "fields": {"payer_account": 34, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 48, "fields": {"payer_account": 37, "payee_account": 33, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 49, "fields": {"payer_account": 36, "payee_account": 35, "amount": 25, "description": ""}}, {"model": "banker.transaction", "pk": 50, "fields": {"payer_account": 37, "payee_account": 34, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 51, "fields": {"payer_account": 34, "payee_account": 36, "amount": 2, "description": ""}}, {"model": "banker.transaction", "pk": 52, "fields": {"payer_account": 33, "payee_account": 36, "amount": 14, "description": ""}}, {"model": "banker.transaction", "pk": 53, "fields": {"payer_account": 37, "payee_account": 33, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 54, "fields": {"payer_account": 36, "payee_account": 33, "amount": 6, "description": ""}}, {"model": "banker.transaction", "pk": 55, "fields": {"payer_account": 34, "payee_account": 37, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 56, "fields": {"payer_account": 37, "payee_account": 35, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 57, "fields": {"payer_account": 35, "payee_account": 36, "amount": 8, "description": ""}}, {"model": "banker.transaction", "pk": 58, "fields": {"payer_account": 33, "payee_account": 34, "amount": 25, "description": ""}}, {"model": "banker.transaction", "pk": 59, "fields": {"payer_account": 32, "payee_account": 37, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 60, "fields": {"payer_account": 34, "payee_account": 37, "amount": 400, "description": ""}}, {"model": "banker.transaction", "pk": 61, "fields": {"payer_account": 35, "payee_account": 32, "amount": 25, "description": ""}}, {"model": "banker.transaction", "pk": 62, "fields": {"payer_account": 33, "payee_account": 35, "amount": 24, "description": ""}}, {"model": "banker.transaction", "pk": 63, "fields": {"payer_account": 32, "payee_account": 34, "amount": 26, "description": ""}}, {"model": "banker.transaction", "pk": 64, "fields": {"payer_account": 36, "payee_account": 32, "amount": 16, "description": ""}}, {"model": "banker.transaction", "pk": 65, "fields": {"payer_account": 37, "payee_account": 34, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 66, "fields": {"payer_account": 34, "payee_account": 36, "amount": 2, "description": ""}}, {"model": "banker.transaction", "pk": 67, "fields": {"payer_account": 33, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 68, "fields": {"payer_account": 37, "payee_account": 32, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 69, "fields": {"payer_account": 32, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 70, "fields": {"payer_account": 36, "payee_account": 35, "amount": 26, "description": ""}}, {"model": "banker.transaction", "pk": 71, "fields": {"payer_account": 35, "payee_account": 36, "amount": 40, "description": ""}}, {"model": "banker.transaction", "pk": 72, "fields": {"payer_account": 37, "payee_account": 33, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 73, "fields": {"payer_account": 33, "payee_account": 34, "amount": 6, "description": ""}}, {"model": "banker.transaction", "pk": 74, "fields": {"payer_account": 32, "payee_account": 35, "amount": 10, "description": ""}}, {"model": "banker.transaction", "pk": 75, "fields": {"payer_account": 37, "payee_account": 36, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 76, "fields": {"payer_account": 34, "payee_account": 33, "amount": 12, "description": ""}}, {"model": "banker.transaction", "pk": 77, "fields": {"payer_account": 37, "payee_account": 34, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 78, "fields": {"payer_account": 35, "payee_account": 37, "amount": 320, "description": ""}}, {"model": "banker.transaction", "pk": 79, "fields": {"payer_account": 37, "payee_account": 33, "amount": 25, "description": ""}}, {"model": "banker.transaction", "pk": 80, "fields": {"payer_account": 32, "payee_account": 37, "amount": 220, "description": ""}}, {"model": "banker.transaction", "pk": 81, "fields": {"payer_account": 34, "payee_account": 37, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 82, "fields": {"payer_account": 37, "payee_account": 35, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 83, "fields": {"payer_account": 35, "payee_account": 32, "amount": 4, "description": ""}}, {"model": "banker.transaction", "pk": 84, "fields": {"payer_account": 33, "payee_account": 34, "amount": 25, "description": ""}}, {"model": "banker.transaction", "pk": 85, "fields": {"payer_account": 37, "payee_account": 33, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 86, "fields": {"payer_account": 32, "payee_account": 37, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 87, "fields": {"payer_account": 36, "payee_account": 33, "amount": 12, "description": ""}}, {"model": "banker.transaction", "pk": 88, "fields": {"payer_account": 37, "payee_account": 34, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 89, "fields": {"payer_account": 34, "payee_account": 36, "amount": 25, "description": ""}}, {"model": "banker.transaction", "pk": 90, "fields": {"payer_account": 34, "payee_account": 33, "amount": 12, "description": ""}}, {"model": "banker.transaction", "pk": 91, "fields": {"payer_account": 35, "payee_account": 34, "amount": 6, "description": ""}}, {"model": "banker.transaction", "pk": 92, "fields": {"payer_account": 37, "payee_account": 33, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 93, "fields": {"payer_account": 33, "payee_account": 32, "amount": 4, "description": ""}}, {"model": "banker.transaction", "pk": 94, "fields": {"payer_account": 33, "payee_account": 36, "amount": 8, "description": ""}}, {"model": "banker.transaction", "pk": 95, "fields": {"payer_account": 32, "payee_account": 33, "amount": 22, "description": ""}}, {"model": "banker.transaction", "pk": 96, "fields": {"payer_account": 34, "payee_account": 33, "amount": 18, "description": ""}}, {"model": "banker.transaction", "pk": 97, "fields": {"payer_account": 32, "payee_account": 35, "amount": 26, "description": ""}}, {"model": "banker.transaction", "pk": 98, "fields": {"payer_account": 36, "payee_account": 35, "amount": 26, "description": ""}}, {"model": "banker.transaction", "pk": 99, "fields": {"payer_account": 34, "payee_account": 36, "amount": 35, "description": ""}}, {"model": "banker.transaction", "pk": 100, "fields": {"payer_account": 35, "payee_account": 37, "amount": 180, "description": ""}}, {"model": "banker.transaction", "pk": 101, "fields": {"payer_account": 35, "payee_account": 34, "amount": 90, "description": ""}}, {"model": "banker.transaction", "pk": 102, "fields": {"payer_account": 35, "payee_account": 33, "amount": 70, "description": ""}}, {"model": "banker.transaction", "pk": 103, "fields": {"payer_account": 33, "payee_account": 32, "amount": 16, "description": ""}}, {"model": "banker.transaction", "pk": 104, "fields": {"payer_account": 32, "payee_account": 34, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 105, "fields": {"payer_account": 37, "payee_account": 36, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 106, "fields": {"payer_account": 34, "payee_account": 35, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 107, "fields": {"payer_account": 33, "payee_account": 32, "amount": 44, "description": ""}}, {"model": "banker.transaction", "pk": 108, "fields": {"payer_account": 33, "payee_account": 37, "amount": 450, "description": ""}}, {"model": "banker.transaction", "pk": 109, "fields": {"payer_account": 32, "payee_account": 37, "amount": 250, "description": ""}}, {"model": "banker.transaction", "pk": 110, "fields": {"payer_account": 32, "payee_account": 33, "amount": 6, "description": ""}}, {"model": "banker.transaction", "pk": 111, "fields": {"payer_account": 34, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 112, "fields": {"payer_account": 34, "payee_account": 32, "amount": 4, "description": ""}}, {"model": "banker.transaction", "pk": 113, "fields": {"payer_account": 35, "payee_account": 37, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 114, "fields": {"payer_account": 35, "payee_account": 33, "amount": 24, "description": ""}}, {"model": "banker.transaction", "pk": 115, "fields": {"payer_account": 35, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 116, "fields": {"payer_account": 33, "payee_account": 35, "amount": 52, "description": ""}}, {"model": "banker.transaction", "pk": 117, "fields": {"payer_account": 33, "payee_account": 37, "amount": 450, "description": ""}}, {"model": "banker.transaction", "pk": 118, "fields": {"payer_account": 32, "payee_account": 35, "amount": 243, "description": ""}}, {"model": "banker.transaction", "pk": 119, "fields": {"payer_account": 32, "payee_account": 35, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 120, "fields": {"payer_account": 36, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 121, "fields": {"payer_account": 35, "payee_account": 33, "amount": 250, "description": ""}}, {"model": "banker.transaction", "pk": 122, "fields": {"payer_account": 33, "payee_account": 32, "amount": 10, "description": ""}}, {"model": "banker.transaction", "pk": 123, "fields": {"payer_account": 32, "payee_account": 33, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 124, "fields": {"payer_account": 34, "payee_account": 33, "amount": 10, "description": ""}}, {"model": "banker.transaction", "pk": 125, "fields": {"payer_account": 35, "payee_account": 33, "amount": 10, "description": ""}}, {"model": "banker.transaction", "pk": 126, "fields": {"payer_account": 36, "payee_account": 33, "amount": 10, "description": ""}}, {"model": "banker.transaction", "pk": 127, "fields": {"payer_account": 33, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 128, "fields": {"payer_account": 32, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 129, "fields": {"payer_account": 32, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 130, "fields": {"payer_account": 37, "payee_account": 32, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 131, "fields": {"payer_account": 36, "payee_account": 33, "amount": 300, "description": ""}}, {"model": "banker.transaction", "pk": 132, "fields": {"payer_account": 34, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 133, "fields": {"payer_account": 34, "payee_account": 35, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 134, "fields": {"payer_account": 36, "payee_account": 34, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 135, "fields": {"payer_account": 35, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 136, "fields": {"payer_account": 33, "payee_account": 37, "amount": 300, "description": ""}}, {"model": "banker.transaction", "pk": 137, "fields": {"payer_account": 32, "payee_account": 37, "amount": 110, "description": ""}}, {"model": "banker.transaction", "pk": 138, "fields": {"payer_account": 37, "payee_account": 34, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 139, "fields": {"payer_account": 34, "payee_account": 33, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 140, "fields": {"payer_account": 35, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 141, "fields": {"payer_account": 33, "payee_account": 36, "amount": 60, "description": ""}}, {"model": "banker.transaction", "pk": 142, "fields": {"payer_account": 37, "payee_account": 32, "amount": 30, "description": ""}}, {"model": "banker.transaction", "pk": 143, "fields": {"payer_account": 32, "payee_account": 36, "amount": 14, "description": ""}}, {"model": "banker.transaction", "pk": 144, "fields": {"payer_account": 34, "payee_account": 33, "amount": 700, "description": ""}}, {"model": "banker.transaction", "pk": 145, "fields": {"payer_account": 37, "payee_account": 35, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 146, "fields": {"payer_account": 35, "payee_account": 36, "amount": 8, "description": ""}}, {"model": "banker.transaction", "pk": 147, "fields": {"payer_account": 33, "payee_account": 32, "amount": 16, "description": ""}}, {"model": "banker.transaction", "pk": 148, "fields": {"payer_account": 37, "payee_account": 32, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 149, "fields": {"payer_account": 32, "payee_account": 34, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 150, "fields": {"payer_account": 36, "payee_account": 33, "amount": 300, "description": ""}}, {"model": "banker.transaction", "pk": 151, "fields": {"payer_account": 36, "payee_account": 34, "amount": 230, "description": ""}}, {"model": "banker.transaction", "pk": 152, "fields": {"payer_account": 34, "payee_account": 32, "amount": 360, "description": ""}}, {"model": "banker.transaction", "pk": 153, "fields": {"payer_account": 33, "payee_account": 36, "amount": 90, "description": ""}}, {"model": "banker.transaction", "pk": 154, "fields": {"payer_account": 37, "payee_account": 35, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 155, "fields": {"payer_account": 32, "payee_account": 35, "amount": 52, "description": ""}}, {"model": "banker.transaction", "pk": 156, "fields": {"payer_account": 36, "payee_account": 37, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 157, "fields": {"payer_account": 37, "payee_account": 34, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 158, "fields": {"payer_account": 35, "payee_account": 36, "amount": 40, "description": ""}}, {"model": "banker.transaction", "pk": 159, "fields": {"payer_account": 35, "payee_account": 37, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 160, "fields": {"payer_account": 33, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 161, "fields": {"payer_account": 37, "payee_account": 32, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 162, "fields": {"payer_account": 37, "payee_account": 32, "amount": 300, "description": ""}}, {"model": "banker.transaction", "pk": 163, "fields": {"payer_account": 32, "payee_account": 33, "amount": 750, "description": ""}}, {"model": "banker.transaction", "pk": 164, "fields": {"payer_account": 32, "payee_account": 37, "amount": 75, "description": ""}}, {"model": "banker.transaction", "pk": 165, "fields": {"payer_account": 36, "payee_account": 37, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 166, "fields": {"payer_account": 37, "payee_account": 36, "amount": 415, "description": ""}}, {"model": "banker.transaction", "pk": 167, "fields": {"payer_account": 36, "payee_account": 33, "amount": 700, "description": ""}}, {"model": "banker.transaction", "pk": 168, "fields": {"payer_account": 37, "payee_account": 34, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 169, "fields": {"payer_account": 37, "payee_account": 34, "amount": 180, "description": ""}}, {"model": "banker.transaction", "pk": 170, "fields": {"payer_account": 35, "payee_account": 33, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 171, "fields": {"payer_account": 37, "payee_account": 32, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 172, "fields": {"payer_account": 36, "payee_account": 32, "amount": 4, "description": ""}}, {"model": "banker.transaction", "pk": 173, "fields": {"payer_account": 34, "payee_account": 33, "amount": 20, "description": ""}}, {"model": "banker.transaction", "pk": 174, "fields": {"payer_account": 35, "payee_account": 32, "amount": 110, "description": ""}}, {"model": "banker.transaction", "pk": 175, "fields": {"payer_account": 35, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 176, "fields": {"payer_account": 34, "payee_account": 37, "amount": 15, "description": ""}}, {"model": "banker.transaction", "pk": 177, "fields": {"payer_account": 37, "payee_account": 35, "amount": 200, "description": ""}}, {"model": "banker.transaction", "pk": 178, "fields": {"payer_account": 35, "payee_account": 34, "amount": 50, "description": ""}}, {"model": "banker.transaction", "pk": 179, "fields": {"payer_account": 32, "payee_account": 37, "amount": 110, "description": ""}}, {"model": "banker.transaction", "pk": 180, "fields": {"payer_account": 34, "payee_account": 32, "amount": 32, "description": ""}}, {"model": "banker.transaction", "pk": 181, "fields": {"payer_account": 35, "payee_account": 37, "amount": 75, "description": ""}}, {"model": "banker.transaction", "pk": 182, "fields": {"payer_account": 33, "payee_account": 37, "amount": 600, "description": ""}}, {"model": "banker.transaction", "pk": 183, "fields": {"payer_account": 34, "payee_account": 37, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 184, "fields": {"payer_account": 33, "payee_account": 37, "amount": 450, "description": ""}}, {"model": "banker.transaction", "pk": 185, "fields": {"payer_account": 32, "payee_account": 35, "amount": 150, "description": ""}}, {"model": "banker.transaction", "pk": 186, "fields": {"payer_account": 37, "payee_account": 32, "amount": 400, "description": ""}}, {"model": "banker.transaction", "pk": 187, "fields": {"payer_account": 37, "payee_account": 32, "amount": 400, "description": ""}}, {"model": "banker.transaction", "pk": 188, "fields": {"payer_account": 32, "payee_account": 37, "amount": 700, "description": ""}}, {"model": "banker.transaction", "pk": 189, "fields": {"payer_account": 37, "payee_account": 34, "amount": 300, "description": ""}}, {"model": "banker.transaction", "pk": 190, "fields": {"payer_account": 34, "payee_account": 32, "amount": 360, "description": ""}}, {"model": "banker.transaction", "pk": 191, "fields": {"payer_account": 35, "payee_account": 37, "amount": 100, "description": ""}}, {"model": "banker.transaction", "pk": 192, "fields": {"payer_account": 33, "payee_account": 32, "amount": 360, "description": ""}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "banker", "model": "transaction"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "banker", "model": "player"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "banker", "model": "account"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "banker", "model": "game"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "sessions.session", "pk": "2du942hjpo55tyz1lcetm4nbwlvmn955", "fields": {"session_data": "YjA0YTFmYTFmNmY4MGEwYzgzMTcyNDRjYTY3MzdmNDFmNmFlYmI3Njp7Il9hdXRoX3VzZXJfaGFzaCI6IjNlYTk0MDI3ZWQ4YjllNmQ4ZjM5OTU0YTlmMTQwMmM5MDUxZjU0MjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=", "expire_date": "2018-10-15T08:19:35.891Z"}}, {"model": "sessions.session", "pk": "ok0h2w58ebxc1zdk3igbvy49x4p8kt2a", "fields": {"session_data": "YjA0YTFmYTFmNmY4MGEwYzgzMTcyNDRjYTY3MzdmNDFmNmFlYmI3Njp7Il9hdXRoX3VzZXJfaGFzaCI6IjNlYTk0MDI3ZWQ4YjllNmQ4ZjM5OTU0YTlmMTQwMmM5MDUxZjU0MjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=", "expire_date": "2018-11-17T14:16:00.690Z"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add transaction", "content_type": 1, "codename": "add_transaction"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change transaction", "content_type": 1, "codename": "change_transaction"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete transaction", "content_type": 1, "codename": "delete_transaction"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can add player", "content_type": 2, "codename": "add_player"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can change player", "content_type": 2, "codename": "change_player"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can delete player", "content_type": 2, "codename": "delete_player"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can add account", "content_type": 3, "codename": "add_account"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can change account", "content_type": 3, "codename": "change_account"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can delete account", "content_type": 3, "codename": "delete_account"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can add game", "content_type": 4, "codename": "add_game"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can change game", "content_type": 4, "codename": "change_game"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can delete game", "content_type": 4, "codename": "delete_game"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add log entry", "content_type": 5, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change log entry", "content_type": 5, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete log entry", "content_type": 5, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can add group", "content_type": 6, "codename": "add_group"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can change group", "content_type": 6, "codename": "change_group"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can delete group", "content_type": 6, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can add permission", "content_type": 7, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can change permission", "content_type": 7, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can delete permission", "content_type": 7, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can add user", "content_type": 8, "codename": "add_user"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can change user", "content_type": 8, "codename": "change_user"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can delete user", "content_type": 8, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add content type", "content_type": 9, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change content type", "content_type": 9, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete content type", "content_type": 9, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can add session", "content_type": 10, "codename": "add_session"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can change session", "content_type": 10, "codename": "change_session"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can delete session", "content_type": 10, "codename": "delete_session"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$36000$ZH4Ma19ekvOu$Pmuh00z92zVgmSVFDYUlx+G9ClQ0KlAk+k1AzN7BQsI=", "last_login": "2018-11-03T14:16:00.657Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "email": "admin@monopoly.com", "is_staff": true, "is_active": true, "date_joined": "2018-10-01T08:19:30.412Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 2, "fields": {"password": "pbkdf2_sha256$36000$5E6gQSeOPHNS$TqjGVAc+e7mAPR0L0KDfQb7GRTn0DWC4avU47QID1co=", "last_login": null, "is_superuser": false, "username": "anirudh", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2018-10-01T08:20:07.501Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 3, "fields": {"password": "pbkdf2_sha256$36000$wVJ79J7Rj50D$FE5L5WxP9FkCMIG3dgmgTjSNNcVe2KPOmF5P8TEKIdo=", "last_login": null, "is_superuser": false, "username": "parigha", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2018-10-01T08:20:14.415Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 4, "fields": {"password": "pbkdf2_sha256$36000$ueogJGNacWcv$V+j+ihCv/u7r6F3uO3t8ob6mkcepmxLDUDcryTP0Hh8=", "last_login": null, "is_superuser": false, "username": "saan", "first_name": "Girver", "last_name": "Acharya", "email": "", "is_staff": false, "is_active": true, "date_joined": "2018-11-05T08:31:14Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 5, "fields": {"password": "pbkdf2_sha256$36000$Mg6NyxBrAiE1$r8N9Sq8tgMM0HCP+4OUvLk0zXR4QqNiqCE3PdLjW/3I=", "last_login": null, "is_superuser": false, "username": "govind", "first_name": "Govind", "last_name": "Acharya", "email": "", "is_staff": false, "is_active": true, "date_joined": "2018-11-05T08:53:21Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 6, "fields": {"password": "pbkdf2_sha256$36000$7CeelpxETtZD$+sUbOyg8EVzGOFq4i2MqIoRIoXkSRx/hP38qb87Pra4=", "last_login": null, "is_superuser": false, "username": "viru", "first_name": "Virendra", "last_name": "Acharya", "email": "", "is_staff": false, "is_active": true, "date_joined": "2018-11-05T08:53:47Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 7, "fields": {"password": "pbkdf2_sha256$36000$ywb9RLkjOB6V$MyY6tcAXOYCo2xi/NzEFqHrBLvMnT67IYBhGyucGuIQ=", "last_login": null, "is_superuser": false, "username": "kunu", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2018-11-05T09:01:01.214Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 8, "fields": {"password": "pbkdf2_sha256$36000$DrZR0yaiQPbt$lQROi+FYAxeaw2FtTkNji3/35Uc9zx4ahADf/Alydjs=", "last_login": null, "is_superuser": false, "username": "laali", "first_name": "Amisha", "last_name": "Acharya", "email": "", "is_staff": false, "is_active": true, "date_joined": "2018-11-05T10:07:24Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 9, "fields": {"password": "pbkdf2_sha256$36000$1r8CWZdIKNKU$8tIh0PRnETNbpRNwz9r8U254YrZzPoA+Z7LoPnmznhE=", "last_login": null, "is_superuser": false, "username": "bank", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2018-11-05T10:10:39.734Z", "groups": [], "user_permissions": []}}, {"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2018-10-01T08:19:48.433Z", "user": 1, "content_type": 4, "object_id": "1", "object_repr": "Game: 1", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2018-10-01T08:20:07.548Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "anirudh", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2018-10-01T08:20:14.468Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "parigha", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2018-10-01T08:20:24.122Z", "user": 1, "content_type": 2, "object_id": "1", "object_repr": "anirudh", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2018-10-01T08:20:26.429Z", "user": 1, "content_type": 2, "object_id": "2", "object_repr": "parigha", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2018-10-01T08:20:34.907Z", "user": 1, "content_type": 3, "object_id": "1", "object_repr": "anirudh", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2018-10-01T08:20:40.501Z", "user": 1, "content_type": 3, "object_id": "2", "object_repr": "parigha", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2018-10-01T08:44:31.287Z", "user": 1, "content_type": 4, "object_id": "2", "object_repr": "Game: 2", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2018-11-05T08:31:14.486Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "saan", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2018-11-05T08:31:40.136Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "saan", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2018-11-05T08:31:58.914Z", "user": 1, "content_type": 2, "object_id": "3", "object_repr": "saan", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2018-11-05T08:53:21.533Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "gs", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2018-11-05T08:53:34.093Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "gs", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2018-11-05T08:53:47.274Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "viru", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2018-11-05T08:53:58.386Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "viru", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2018-11-05T08:54:10.617Z", "user": 1, "content_type": 2, "object_id": "4", "object_repr": "viru", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2018-11-05T08:54:15.298Z", "user": 1, "content_type": 2, "object_id": "5", "object_repr": "gs", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2018-11-05T09:01:01.256Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "kunu", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2018-11-05T09:01:13.754Z", "user": 1, "content_type": 2, "object_id": "6", "object_repr": "kunu", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2018-11-05T09:01:29.163Z", "user": 1, "content_type": 3, "object_id": "30", "object_repr": "kunu", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2018-11-05T10:07:24.242Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "laali", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2018-11-05T10:07:35.161Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "laali", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2018-11-05T10:07:47.019Z", "user": 1, "content_type": 2, "object_id": "7", "object_repr": "laali", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2018-11-05T10:08:02.360Z", "user": 1, "content_type": 3, "object_id": "31", "object_repr": "laali", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2018-11-05T10:10:39.843Z", "user": 1, "content_type": 8, "object_id": "9", "object_repr": "bank", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2018-11-05T10:11:11.364Z", "user": 1, "content_type": 2, "object_id": "8", "object_repr": "bank", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2018-11-05T10:11:38.801Z", "user": 1, "content_type": 3, "object_id": "37", "object_repr": "bank", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2018-11-05T10:19:13.185Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "govind", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"username\"]}}]"}}, {"model": "banker.player", "pk": 1, "fields": {"person": 2}}, {"model": "banker.player", "pk": 2, "fields": {"person": 3}}, {"model": "banker.player", "pk": 3, "fields": {"person": 4}}, {"model": "banker.player", "pk": 4, "fields": {"person": 6}}, {"model": "banker.player", "pk": 5, "fields": {"person": 5}}, {"model": "banker.player", "pk": 6, "fields": {"person": 7}}, {"model": "banker.player", "pk": 7, "fields": {"person": 8}}, {"model": "banker.player", "pk": 8, "fields": {"person": 9}}]
+[
+{
+  "model": "banker.player",
+  "pk": 1,
+  "fields": {
+    "person": 2
+  }
+},
+{
+  "model": "banker.player",
+  "pk": 2,
+  "fields": {
+    "person": 3
+  }
+},
+{
+  "model": "banker.player",
+  "pk": 3,
+  "fields": {
+    "person": 4
+  }
+},
+{
+  "model": "banker.player",
+  "pk": 4,
+  "fields": {
+    "person": 5
+  }
+},
+{
+  "model": "banker.game",
+  "pk": 1,
+  "fields": {
+    "start_time": "2021-05-02T01:12:12.353Z"
+  }
+},
+{
+  "model": "banker.account",
+  "pk": 1,
+  "fields": {
+    "game": 1,
+    "player": 1,
+    "balance": 1500
+  }
+},
+{
+  "model": "banker.account",
+  "pk": 2,
+  "fields": {
+    "game": 1,
+    "player": 2,
+    "balance": 1500
+  }
+},
+{
+  "model": "banker.account",
+  "pk": 3,
+  "fields": {
+    "game": 1,
+    "player": 4,
+    "balance": 150000
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-05-02T01:11:24.027Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "alice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-05-02T01:11:29.847Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "bob",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-05-02T01:11:37.315Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "carol",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-05-02T01:11:45.712Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "bank",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2021-05-02T01:11:50.584Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "alice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2021-05-02T01:11:53.645Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "bob",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2021-05-02T01:11:56.361Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "carol",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2021-05-02T01:11:58.697Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "bank",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add transaction",
+    "content_type": 1,
+    "codename": "add_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change transaction",
+    "content_type": 1,
+    "codename": "change_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete transaction",
+    "content_type": 1,
+    "codename": "delete_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view transaction",
+    "content_type": 1,
+    "codename": "view_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add account",
+    "content_type": 2,
+    "codename": "add_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change account",
+    "content_type": 2,
+    "codename": "change_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete account",
+    "content_type": 2,
+    "codename": "delete_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view account",
+    "content_type": 2,
+    "codename": "view_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add game",
+    "content_type": 3,
+    "codename": "add_game"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change game",
+    "content_type": 3,
+    "codename": "change_game"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete game",
+    "content_type": 3,
+    "codename": "delete_game"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view game",
+    "content_type": 3,
+    "codename": "view_game"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add player",
+    "content_type": 4,
+    "codename": "add_player"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change player",
+    "content_type": 4,
+    "codename": "change_player"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete player",
+    "content_type": 4,
+    "codename": "delete_player"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view player",
+    "content_type": 4,
+    "codename": "view_player"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 5,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 5,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 5,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 5,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 6,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 6,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 6,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 6,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 7,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 7,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 7,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 7,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 8,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 8,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 8,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 8,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 9,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 9,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 9,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 9,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 10,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 10,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 10,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 10,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$ZrbRahR9wscFnzKfRUWfJD$6+Arz3YYNHnq0Yzh0zlWPp7IkWcmNofX3atGyDQ8REQ=",
+    "last_login": "2021-05-02T01:10:57.479Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-05-02T01:10:37.038Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$nyt523SFzc4DibvNmr0scY$PaP+0Cu+zRI+ce1E0u8xrNl+EL2PY3uwMC58XdGdoq0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "alice",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-05-02T01:11:23.724Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$t8UuXn2ieaO10pPvI0TOtK$hqamBuGutr+Icli+8FdOJgTqfp1EoQ9opB0Q0lF1soI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "bob",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-05-02T01:11:29.546Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$Cu5DIm4b7obGWY2W5qOHKe$Np1hUR+CpQ8Fbk0AhuyJx7mBXUwFeJkauau6/bndQwA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "carol",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-05-02T01:11:37.012Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$5FgKLCH3hK7Q0wVTh3xqnO$aW5nJCek1wK6JZ7h5gTV8ZevJnluuGL2/0SWIArE9aI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "bank",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-05-02T01:11:45.410Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "banker",
+    "model": "transaction"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "banker",
+    "model": "account"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "banker",
+    "model": "game"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "banker",
+    "model": "player"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l4x7stlw6zou27dpfckbg5nfrzn3u1c6",
+  "fields": {
+    "session_data": ".eJxVjE0OwiAYRO_C2hDAUqhL9z0D-f6QqmmT0q6Md1eSLjSzm_dmXirBvpW0V1nTxOqirDr9dgj0kLkBvsN8WzQt87ZOqJuiD1r1uLA8r4f7d1Cglu96cBAsZokS0ZGBIXpoIZM55M4gWO86i71hJnMm9BiEMVgxruuJ1fsDAxw40A:1ld0dN:K0NswVSUEdiXlzMSfieD5WDcd3r14Vg6aJL_KKFAlGc",
+    "expire_date": "2021-05-16T01:10:57.485Z"
+  }
+}
+]
