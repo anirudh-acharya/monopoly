@@ -14,5 +14,5 @@ class TestGameForm(TestCase):
         for choice in new_game_form.fields['players'].queryset:
             players_eligible_for_game.append(choice)
 
-        self.assertEquals(7, len(players_eligible_for_game), "No of entries in the game form must be 7, but was %d" %
+        self.assertEquals(3, len(players_eligible_for_game), "No of entries in the game form must be 3, but was %d" %
                           len(players_eligible_for_game))
